@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.connexion{
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+}
+h1{
+    text-align: center;
+}
+.client{
+    text-align: center;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 1px 1px rgba(103, 101, 103, 0.53);
+    transition-duration: 1s;
+}
+button:hover{
+    box-shadow: 10px -5px rgba(103, 101, 103, 0.25);
+    transition-duration: 1s;
+}
+tbody{
+    overflow: scroll;
+    max-height: 100px;
+}
