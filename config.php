@@ -8,7 +8,8 @@ if (!$db_connect){
 
 $errors = array();
 ?>
-<html>
+<!Doctype html>
+<html lang="fr">
 <head>
     <link rel="stylesheet" href="src/home.css">
 </head>

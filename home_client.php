@@ -5,8 +5,8 @@ $res_client = mysqli_query($db_connect, $data_client);
 $res_check = mysqli_num_rows($res_client);
 
 ?>
-
-<html>
+<!Doctype html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Homepage">
@@ -24,42 +24,40 @@ $res_check = mysqli_num_rows($res_client);
     <h2>Partie Client</h2>
     <button onclick="location.href='new_client.php'" class="alert-info" style="margin-bottom: 20px">Nouveau client</button>
     <button onclick="location.href='modify_client.php'" class='alert-warning' style="margin: 0 10px">Modifier client</button>
-    <button onclick="location.href='suppr_client.php'" class='alert-danger'>supprimer client</button>
+    <button onclick="location.href='suppr_client.php'" class='alert-danger'>Supprimer client</button>
 </div>
-
+<table class="table">
+<thead>
+<tr>
+    <th scope="col">#</th>
+    <th scope="col">Nom</th>
+    <th scope="col">Prénom</th>
+    <th scope="col">Téléphone</th>
+    <th scope="col">Adresse</th>
+    <th scope="col">Email</th>
+    <th scope="col">Société</th>
+</tr>
+</thead>
 <?php
 
 if($res_check > 0){
     while ($row = mysqli_fetch_assoc($res_client)){
-        echo "<table class=\"table\">
-    <thead>
-    <tr>
-        <th scope=\"col\">#</th>
-        <th scope=\"col\">Nom</th>
-        <th scope=\"col\">Prénom</th>
-        <th scope=\"col\">Téléphone</th>
-        <th scope=\"col\">Adresse</th>
-        <th scope=\"col\">Email</th>
-        <th scope=\"col\">Société</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <th scope=\"row\">".$row["idClient"]."</th>
-        <td>".$row["Client_name"]."</td>
-        <td>".$row["Surname"]."</td>
-        <td>".$row["Phone"]."</td>
-        <td>".$row["Adress"]."</td>
-        <td>".$row["Email"]."</td>
-        <td>".$row["Societe"]."</td>
-    </tr>
-    </tbody>
-</table>";
-
+        echo "<tbody>
+        <tr>
+            <th scope=\"row\">".$row["idClient"]."</th>
+            <td>".$row["Client_name"]."</td>
+            <td>".$row["Surname"]."</td>
+            <td>".$row["Phone"]."</td>
+            <td>".$row["Adress"]."</td>
+            <td>".$row["Email"]."</td>
+            <td>".$row["Societe"]."</td>
+        </tr>
+        </tbody>
+";
     }
 }
-
 ?>
+</table>
 
 </body>
 </html>

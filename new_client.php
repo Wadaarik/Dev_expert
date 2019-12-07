@@ -56,27 +56,27 @@ if (isset($_POST['submit_client'])){
         <a href="javascript:history.go(-1)">BACK</a>
         <div class="form-group">
             <label for="name_create">Nom</label>
-            <input type="text" class="form-control" id="name_create" aria-describedby="name_create" name="name_create" placeholder="Aa">
+            <input type="text" class="form-control" id="name_create" aria-describedby="name_create" name="name_create" placeholder="Aa" required>
         </div>
         <div class="form-group">
             <label for="surname_create">Prénom</label>
-            <input type="text" class="form-control" id="surname_create" name="surname_create" placeholder="Aa">
+            <input type="text" class="form-control" id="surname_create" name="surname_create" placeholder="Aa" required>
         </div>
         <div class="form-group">
             <label for="phone">Téléphone</label>
-            <input type="text" class="form-control" id="phone" name="phone" placeholder="0605040603">
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="0605040603" required>
         </div>
         <div class="form-group">
             <label for="address">Addresse</label>
-            <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St">
+            <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St" required>
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="johndoe@email.com">
+            <input type="email" class="form-control" id="email" name="email" placeholder="johndoe@email.com" required>
         </div>
         <div class="form-group">
             <label for="societe">Société</label>
-            <input type="text" class="form-control" id="societe" aria-describedby="societe" name="societe" placeholder="Aa">
+            <input type="text" class="form-control" id="societe" aria-describedby="societe" name="societe" placeholder="Aa" required>
         </div>
         <button type="submit" class="btn btn-success" name="submit_client">Créer le client</button>
     </form>
