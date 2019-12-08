@@ -18,6 +18,7 @@ $res_check = mysqli_num_rows($res_client);
     <title>Home | Client</title>
 </head>
 <body>
+<button onclick="location.href='../home.php'" class="alert-dark" style="margin-left: 20px">Menu</button>
 <h1>Quelle est votre demande ?</h1>
 <hr>
 <div class="client">

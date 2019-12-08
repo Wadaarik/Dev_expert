@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 
-if(isset($_POST['modify_client']))
+if(isset($_POST['suppr_client']))
 {
     $idClient = mysqli_real_escape_string($db_connect, $_POST['idClient']);
 
@@ -39,7 +39,7 @@ if(isset($_POST['modify_client']))
         <label for="idClient">ID Client</label>
         <input type="number" class="form-control" id="idClient" aria-describedby="idClient" name="idClient" placeholder="1">
     </div>
-    <button type="submit" class="btn btn-danger" name="modify_client">Supprimer le client</button>
+    <button type="submit" class="btn btn-danger" name="suppr_client">Supprimer le client</button>
 </form>
 </body>
 </html>

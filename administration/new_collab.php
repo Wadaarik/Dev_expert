@@ -66,13 +66,19 @@ if (isset($_POST['submit_collab'])){
         <select  multiple class="form-control" id="collab_type" name="collab_type" required>
             <optgroup label="Département techniques">
                 <option value="Système d’information">Système d’information</option>
+                <option value="Système d’information">Web</option>
+                <option value="Système d’information">Réalité virtuelle</option>
+                <option value="Système d’information">Informatique embarquée</option>
+                <option value="Système d’information">Réseau et sécurité</option>
             </optgroup>
             <optgroup label="Personnel administratif">
                 <option value="Commerciaux">Commerciaux</option>
+                <option value="Commerciaux">Secrétaires</option>
+                <option value="Commerciaux">Comptables</option>
             </optgroup>
             <optgroup label="Experts techniques">
-                <option value="1">Internes</option>
-                <option value="0">Externes</option>
+                <option value="Expert Interne">Internes</option>
+                <option value="Expert Externe">Externes</option>
             </optgroup>
         </select>
     </div>
